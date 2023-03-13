@@ -1,0 +1,62 @@
+/*
+	Flex bot not dynamic
+*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: var(--primary-color);
+}
+
+:root {
+	--sidebar-color: #202123;
+	--main-color: #343541;
+	--primary-color: #edecf1;
+}
+
+
+.sidebar {
+	background-color: var(--sidebar-color);
+}
+
+.main__content {
+	background-color: var(--main-color);
+}
+
+.home__wrapper {
+	display: flex;
+	flex-direction: row;
+	height: 100vh; /* parent has no width so use vh */
+}
+
+.sidebar {
+	height: 100%;
+	width: 200px;
+	/*
+	min width is useful when div container has no children
+	it is block element, so takes 100% of children's content
+	*/
+	min-width: 200px;
+}
+
+.main__content {
+	/*width: calc(100% - 200px);*/
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
