@@ -1,22 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./index.css">
-	<title>Document</title>
-</head>
-<body>
-	<div class="home__wrapper">
-		<div class="sidebar">
-			<ul class="">
-				<li></li>
-			</ul>
-		</div>
-		<div class="main__content">
-			<h1>ChatGPT</h1>
-		</div>
-	</div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <script
+            src="https://kit.fontawesome.com/a7bf698419.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap"
+            rel="stylesheet"
+        />
+        <title>New chat</title>
+    </head>
+    <body>
+        <div class="home__wrapper">
+            <div class="sidebar">
+                <div class="sidebar__header">
+                    <a>
+                        <i class="fa-regular fa-plus"></i>
+                        <p class="sidebar__header--text">New chat</p>
+                    </a>
+                </div>
+                <div class="sidebar__list">
+                    <a class="sidebar__list--item">
+                        <span>
+                            <i class="fa-solid fa-message"></i>
+                            <p class="sidebar__list--item-text">
+                                Terraform Cloud Configuration
+                            </p>
+                        </span>
+                    </a>
+                </div>
+                <div class="sidebar__footer">
+                    <span>
+                        <i class="fa-solid fa-trash-can"></i>
+                        <p class="sidebar__footer--item-text">
+                            Clear conversations
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="main__content">
+                <h1>ChatGPT</h1>
+                <div class="grid__container">
+                    <div class="grid__container--item-header">
+                        <i class="fa-regular fa-lightbulb"></i>
+                        <p>Examples</p>
+                    </div>
+                    <div class="grid__container--item-header">
+                        <i class="fa-solid fa-bolt"></i>
+                        <p>Capabilities</p>
+                    </div>
+                    <div class="grid__container--item-header">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p>Limitations</p>
+                    </div>
+                    <div class="grid__container--item">
+                        "Explain quantum computing in simple terms" &rightarrow;
+                    </div>
+                    <div class="grid__container--item">
+                        Remembers what user said earlier in the conversation
+                    </div>
+                    <div class="grid__container--item">
+                        May occasionally generate incorrect information
+                    </div>
+                    <div class="grid__container--item">
+                        "Got any ideas for a 10 year old's birthday?"
+                        &rightarrow;
+                    </div>
+                    <div class="grid__container--item">
+                        Allows user to provide follow-up corrections
+                    </div>
+                    <div class="grid__container--item">
+                        May occasionally produce harmful instructions or biased
+                        content
+                    </div>
+                    <div class="grid__container--item">
+                        "How do I make an HTTP request in Javascript?"
+                        &rightarrow;
+                    </div>
+                    <div class="grid__container--item">
+                        Trained to decline inappropriate requests
+                    </div>
+                    <div class="grid__container--item">
+                        Limited knowledge of world and events after 2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
