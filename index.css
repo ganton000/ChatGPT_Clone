@@ -80,11 +80,25 @@ p {
 
 .sidebar__footer {
 	display:flex;
-	flex-direction: row;
-	height: 100%;
+	flex-direction: column;
 	justify-content: center;
+	align-items: flex-start;
+	margin-left: 20px;
+	gap: 35px;
 	text-align: center;
 }
+
+
+.sidebar__footer > a > i {
+	margin-right: 6px;
+	font-size: 18px;
+}
+
+.sidebar__footer > a > p {
+	font-weight: 300;
+	font-size: 18px;
+}
+
 
 .sidebar__list--item {
 	margin: 20px 10px;
@@ -109,7 +123,7 @@ p {
 }
 
 .fa-solid, .fa-regular {
-	font-size: 20px;
+	font-size: 18px;
 	margin-left: 10px;
 }
 
@@ -122,15 +136,16 @@ p {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(4, 1fr);
 	gap: 20px;
+	justify-content: center;
+	align-items: center;
 	margin: 50px;
 	font-weight: 300;
 }
 
 .grid__container--item {
+	height: 100%;
 	background-color: #3e3e4b;
 	/*background-color: #39c786;*/
-	padding: 5px;
-	text-align: center;
 	border: 1px thin #ddd;
 	border-radius: 10px;
 	box-shadow: 0px .2px 0px #aaa;
@@ -145,7 +160,7 @@ p {
 }
 
 .grid__container--item-header > i {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size: 22px;
 }
 
