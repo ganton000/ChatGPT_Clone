@@ -168,3 +168,56 @@ p {
 	font-size: 22px;
 	font-weight: 400;
 }
+
+.grid__container--query {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 20px 40px;
+	position: relative;
+	border-color: rgba(0, 0, 0, 0.1);
+	background-color: white;
+	border-width: 1px;
+}
+
+.grid__container--query > textarea {
+	max-height: 200px;
+	height: 24px;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	padding-right: 7px;
+	outline: none;
+	box-shadow: none;
+	--webkit-appearance: none;
+	overflow-y: hidden;
+	width: auto;
+	resize: none;
+}
+
+textarea:focus {
+	outline: none;
+	box-shadow: none;;
+}
+
+textarea::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,0.2);
+}
+
+hr {
+	margin-bottom: 15px;
+	color: #202224;
+}
+.grid__container--query > button {
+	background-color: #fff;
+	color: #4b5563;
+	padding: 12px;
+	border-radius: 3px;
+	position: absolute;
+	bottom: 20px;
+	right: 4px;
+}
